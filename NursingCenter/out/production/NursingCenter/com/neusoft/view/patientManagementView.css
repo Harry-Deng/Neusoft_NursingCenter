@@ -1,0 +1,142 @@
+.button1
+{
+    -fx-background-color : linear-gradient(to bottom left, #f6d365, #fda085);;
+    -fx-background-radius :  20;
+
+}
+.button1:hover
+{
+    -fx-background-color : linear-gradient(to bottom left, #fda085, #f6d365);
+    -fx-background-radius :  20;
+}
+.button1:pressed
+{
+    -fx-background-color : #2F2B43 ;
+    -fx-background-radius :  20;
+}
+
+.button2
+{
+    -fx-background-color : #9370DB;
+    -fx-background-radius :  20;
+}
+.button2:hover
+{
+    -fx-background-color : #524A7B ;
+    -fx-background-radius :  20;
+}
+.button2:pressed
+{
+    -fx-background-color : #2F2B43 ;
+    -fx-background-radius :  20;
+}
+
+.button3
+{
+    -fx-background-color : #141124;
+    -fx-background-radius :  0 0 0 0;
+}
+.button3:hover
+{
+    -fx-background-color : #524A7B ;
+}
+.button3:pressed
+{
+    -fx-background-color : #2F2B43 ;
+}
+
+.button4
+{
+    -fx-background-color :linear-gradient(to top left, #3498DB, #D4CEE3);
+    -fx-background-radius :  30 30 30 30;
+}
+.button4:hover
+{
+    -fx-background-color :linear-gradient(to top left, #D4CEE3,  #3498DB);
+    -fx-background-radius :  30 30 30 30;
+}
+.button4:pressed
+{
+    -fx-background-color :linear-gradient(to top left, #3498DB, #D4CEE3);
+    -fx-background-radius :  30 30 30 30;
+}
+
+.button5
+{
+    -fx-background-color : linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    -fx-background-radius :  30 30 30 30;
+}
+.button5:hover
+{
+    -fx-background-color : linear-gradient(to left, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    -fx-background-radius :  30 30 30 30;
+}
+.button5:pressed
+{
+    -fx-background-color: #2F2B43;
+}
+
+.delButton{
+    -fx-background-color: red;
+}
+.delButton:pressed
+{
+    -fx-background-color: #2F2B43;
+}
+
+.modButton{
+    -fx-background-color: orange;
+}
+.modButton:pressed
+{
+    -fx-background-color: #2F2B43;
+}
+
+.creButton{
+    -fx-background-color: green;
+}
+.creButton:pressed
+{
+    -fx-background-color: #2F2B43;
+}
+
+.evaButton{
+    -fx-background-color :linear-gradient(to top left, #D4CEE3,  cornflowerblue);
+    -fx-background-radius: 50;
+}
+.evaButton:pressed
+{
+    -fx-background-color: #2F2B43;
+}
+
+.exitButton
+{
+    -fx-background-color : red;
+    -fx-background-radius :  20;
+}
+.exitButton:hover
+{
+    -fx-background-color : #524A7B ;
+    -fx-background-radius :  20;
+}
+.exitButton:pressed
+{
+    -fx-background-color : #2F2B43 ;
+    -fx-background-radius :  20;
+}
+
+.listView
+{
+    -fx-background-color :  #393351;
+    -fx-background-radius :  20;
+}
+.listView:hover
+{
+    -fx-background-color :  #524A7B ;
+    -fx-background-radius :  20;
+}
+.listView:pressed
+{
+    -fx-background-color : #2F2B43 ;
+    -fx-background-radius :  20;
+}

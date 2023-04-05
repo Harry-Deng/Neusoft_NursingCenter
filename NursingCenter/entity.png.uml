@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.neusoft.entity</OriginalElement>
+  <nodes>
+    <node x="148.5" y="0.0">com.neusoft.entity.AbstractUser</node>
+    <node x="789.0" y="763.0">com.neusoft.entity.Template</node>
+    <node x="364.0" y="763.0">com.neusoft.entity.CheckInInfo</node>
+    <node x="1070.0" y="1280.0">com.neusoft.entity.building</node>
+    <node x="881.0" y="1280.0">com.neusoft.entity.Type</node>
+    <node x="0.0" y="763.0">com.neusoft.entity.Problem</node>
+    <node x="314.0" y="1280.0">com.neusoft.entity.TemplateShow</node>
+    <node x="695.0" y="0.0">com.neusoft.entity.PatientTester</node>
+    <node x="625.0" y="1280.0">com.neusoft.entity.StaffType</node>
+    <node x="0.0" y="1280.0">com.neusoft.entity.ModelListShow</node>
+    <node x="1112.0" y="763.0">com.neusoft.entity.Database</node>
+    <node x="237.0" y="315.0">com.neusoft.entity.Staff</node>
+    <node x="0.0" y="488.5">com.neusoft.entity.Admin</node>
+    <node x="1163.0" y="0.0">com.neusoft.entity.Patient</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.neusoft.entity.Admin" target="com.neusoft.entity.AbstractUser" relationship="GENERALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="108.5" y="290.0" />
+      <point x="276.0" y="290.0" />
+      <point x="0.0" y="132.5" />
+    </edge>
+    <edge source="com.neusoft.entity.Staff" target="com.neusoft.entity.AbstractUser" relationship="GENERALIZATION">
+      <point x="0.0" y="-201.5" />
+      <point x="443.5" y="290.0" />
+      <point x="276.0" y="290.0" />
+      <point x="0.0" y="132.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3999999999999999" showDependencies="false" x="974.2018685134344" y="772.5000000000002" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="basicLayer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" styleClass="stackPane" stylesheets="@styleSheets.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.LoginViewController">
+   <children>
+      <AnchorPane fx:id="mainLayer" prefHeight="489.0" prefWidth="800.0" styleClass="mainLayer" stylesheets="@styleSheets.css">
+         <children>
+            <AnchorPane fx:id="loginLayer" layoutX="318.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="482.0" styleClass="loginLayer" stylesheets="@styleSheets.css">
+               <children>
+                  <Label fx:id="staffTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="151.0" layoutY="77.0" prefHeight="23.0" prefWidth="196.0" text="东软颐养中心" textAlignment="CENTER" textFill="#3F2B63">
+                     <font>
+                        <Font name="YouYuan" size="28.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="staffTips" alignment="CENTER" contentDisplay="CENTER" layoutX="114.0" layoutY="179.0" prefHeight="10.0" prefWidth="267.0" text="使用社交账号登录" textAlignment="CENTER" textFill="#3F2B63">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="adminTitle" alignment="CENTER" contentDisplay="CENTER" layoutX="151.0" layoutY="78.0" prefHeight="23.0" prefWidth="196.0" text="东软颐养中心" textAlignment="CENTER" textFill="#3F2B63">
+                     <font>
+                        <Font name="YouYuan" size="27.0" />
+                     </font>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Label>
+                  <JFXButton fx:id="otherAccess1" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="182.0" layoutY="127.0" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 300; -fx-text-fill: white; -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="FACEBOOK" textAlignment="CENTER" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="otherAccess2" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="231.0" layoutY="127.0" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 300; -fx-text-fill: white; -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="GOOGLE" textAlignment="CENTER" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="otherAccess3" alignment="CENTER" contentDisplay="CENTER" ellipsisString="" layoutX="280.0" layoutY="127.0" prefHeight="32.0" prefWidth="32.0" style="-fx-background-radius: 300; -fx-text-fill: white; -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="LINKEDIN" textAlignment="CENTER" />
+                     </graphic>
+                  </JFXButton>
+                  <TextField fx:id="staffUsername" layoutX="119.0" layoutY="218.0" prefHeight="32.0" prefWidth="258.0" promptText="StaffName" />
+                  <JFXButton fx:id="staffLoginBtn" buttonType="RAISED" layoutX="189.0" layoutY="375.0" onAction="#staffLoginBtn" prefHeight="32.0" prefWidth="118.0" styleClass="staffLoginButton" stylesheets="@styleSheets.css" text="LOGIN">
+                     <font>
+                        <Font name="Impact" size="16.0" />
+                     </font></JFXButton>
+                  <Label fx:id="adminTips" alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="179.0" prefHeight="10.0" prefWidth="267.0" text="使用社交帐号登录" textAlignment="CENTER" textFill="#3F2B63">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="adminLoginBtn" buttonType="RAISED" layoutX="189.0" layoutY="375.0" onAction="#adminLoginBtn" prefHeight="32.0" prefWidth="118.0" styleClass="adminLoginButton" stylesheets="@styleSheets.css" text="LOGIN">
+                     <font>
+                        <Font name="Impact" size="16.0" />
+                     </font></JFXButton>
+                  <TextField fx:id="adminUserName" layoutX="119.0" layoutY="218.0" prefHeight="32.0" prefWidth="258.0" promptText="AdminName" />
+                  <Label fx:id="adminPWForgot" alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="323.0" onMouseClicked="#forgotRemindAdmin" prefHeight="10.0" prefWidth="267.0" styleClass="forgotLabelAdmin" stylesheets="@styleSheets.css" text="忘记密码了？" textAlignment="CENTER" textFill="#7156dd">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="adminPassword" layoutX="119.0" layoutY="268.0" onKeyPressed="#enterPressedAdmin" prefHeight="32.0" prefWidth="258.0" promptText="password" />
+                  <PasswordField fx:id="staffPassword" layoutX="120.0" layoutY="268.0" onKeyPressed="#enterPressedStaff" prefHeight="32.0" prefWidth="258.0" promptText="Password" />
+                  <Label fx:id="staffPWForgot" alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="323.0" onMouseClicked="#forgotRemindStaff" prefHeight="10.0" prefWidth="267.0" styleClass="forgotLabelStaff" stylesheets="@styleSheets.css" text="忘记密码了？" textAlignment="CENTER" textFill="#3F2B63">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Exit" layoutX="448.0" layoutY="14.0" onMouseClicked="#exitLoginPage" onMouseEntered="#exitBtnToRed" onMouseExited="#exitBtnToPurple" text="X" textFill="#3F2B63">
+                     <font>
+                        <Font name="Microsoft YaHei UI Bold" size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="moveLayer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="319.0" styleClass="moveLayer" stylesheets="@styleSheets.css" StackPane.alignment="CENTER_LEFT">
+         <children>
+            <Label fx:id="l1" alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="112.0" prefHeight="39.0" prefWidth="211.0" text="你好，员工！" textFill="WHITE">
+               <font>
+                  <Font name="YouYuan" size="27.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Label fx:id="l2" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="173.0" prefHeight="23.0" prefWidth="267.0" text="欢迎的登录东软颐养中心，这里提供" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="l3" alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="203.0" prefHeight="23.0" prefWidth="173.0" text="最优质的在线医疗平台！" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="toAdminPage" buttonType="RAISED" layoutX="84.0" layoutY="262.0" onMouseClicked="#btn" prefHeight="39.0" prefWidth="135.0" styleClass="toAdminButton" stylesheets="@styleSheets.css" text="管理员入口">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="toStaffPage" buttonType="RAISED" layoutX="84.0" layoutY="262.0" onMouseClicked="#btn2" prefHeight="39.0" prefWidth="135.0" styleClass="toStaffButton" stylesheets="@styleSheets.css" text="员工入口">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="s1" alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="104.0" prefHeight="54.0" prefWidth="238.0" text="欢迎回来，管理员！" textFill="WHITE">
+               <font>
+                  <Font name="YouYuan" size="25.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <Label fx:id="s2" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="176.0" prefHeight="17.0" prefWidth="267.0" text="东软颐养中心云平台，全球最好的" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="YouYuan" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="s3" alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="206.0" prefHeight="17.0" prefWidth="173.0" text="医疗云服务提供商！" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

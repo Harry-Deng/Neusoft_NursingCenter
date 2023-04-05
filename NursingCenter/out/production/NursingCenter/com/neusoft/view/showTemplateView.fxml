@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="573.0" style="-fx-background-color: #393351;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.ShowTemplateViewController">
+   <children>
+      <Pane layoutX="9.0" layoutY="111.0" prefHeight="423.0" prefWidth="556.0">
+         <children>
+            <ImageView fitHeight="573.0" fitWidth="576.0" layoutX="-10.0" layoutY="-109.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gif/R-C%20(2).gif" />
+               </image>
+            </ImageView>
+            <Separator layoutX="-11.0" layoutY="441.0" opacity="0.27" prefHeight="42.0" prefWidth="573.0" />
+            <Label alignment="CENTER" layoutX="-18.0" layoutY="-93.0" prefHeight="42.0" prefWidth="151.0" text="模板一" textFill="#ddd9d9">
+               <font>
+                  <Font name="Agency FB Bold" size="34.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableView" layoutX="-8.0" layoutY="-30.0" opacity="0.73" prefHeight="491.0" prefWidth="573.0" style="-fx-background-color: #2F2B43;" stylesheets="@adminMainView.css">
+               <columns>
+                  <TableColumn fx:id="idCol" prefWidth="75.0" text="题目ID" />
+                  <TableColumn fx:id="contentCol" prefWidth="75.0" text="题目内容" />
+                  <TableColumn fx:id="modeCol" prefWidth="75.0" text="类型" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </Pane>
+      <Label fx:id="exitLabel" alignment="CENTER" layoutX="511.0" onMouseClicked="#close" prefHeight="62.0" prefWidth="61.0" styleClass="exitLabel" stylesheets="@settingStaff.css" text="X" textFill="#ddd9d9">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <HBox layoutX="125.0" layoutY="598.0" prefHeight="42.0" prefWidth="324.0" spacing="100.0">
+         <children>
+            <JFXButton fx:id="cancelBtn" buttonType="RAISED" onMouseClicked="#newProblem" prefHeight="42.0" prefWidth="110.0" styleClass="addBtn" stylesheets="@settingStaff.css" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="saveBtn" buttonType="RAISED" onMouseClicked="#close" prefHeight="42.0" prefWidth="110.0" styleClass="saveBtn" stylesheets="@settingStaff.css" text="SAVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

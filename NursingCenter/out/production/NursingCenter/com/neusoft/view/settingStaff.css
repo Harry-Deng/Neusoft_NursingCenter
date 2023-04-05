@@ -1,0 +1,63 @@
+.background{
+    -fx-background-color: #262339;
+}
+
+.textField{
+    -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
+    -fx-border-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.cancelBtn{
+    -fx-border-radius: 20;
+    -fx-border-color:  #DC143C;
+    -fx-background-radius: 20;
+    -fx-background-color:  #DC143C;
+}
+.cancelBtn:hover{
+    -fx-border-radius: 20;
+    -fx-border-color:  #DC143C;
+    -fx-background-radius: 20;
+    -fx-background-color:  #393351;
+    -fx-text-fill: #DC143C;
+    -fx-border-width: 2;
+}
+
+.saveBtn{
+    -fx-border-radius: 20;
+    -fx-border-color:   #2E8B57;
+    -fx-background-radius: 20;
+    -fx-background-color:   #2E8B57;
+}
+.saveBtn:hover{
+    -fx-border-radius: 20;
+    -fx-border-color: #2E8B57;
+    -fx-background-radius: 20;
+    -fx-background-color:  #393351;
+    -fx-text-fill: #2E8B57;
+    -fx-border-width: 2;
+}
+
+
+.exitLabel{
+    -fx-text-fill: #ddd9d9;
+}
+.exitLabel:hover{
+    -fx-text-fill: red;
+}
+
+.addBtn{
+    -fx-border-radius: 20;
+    -fx-border-color:  orange;
+    -fx-background-radius: 20;
+    -fx-background-color:  orange;
+}
+.addBtn:hover{
+    -fx-border-radius: 20;
+    -fx-border-color:  orange;
+    -fx-background-radius: 20;
+    -fx-background-color:  #393351;
+    -fx-text-fill: orange;
+    -fx-border-width: 2;
+}

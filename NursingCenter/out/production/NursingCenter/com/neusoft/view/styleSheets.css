@@ -1,0 +1,103 @@
+
+/*调整“管理员入口”按钮，鼠标放在图标上时变色*/
+.toAdminButton{
+    -fx-background-color:#7156DD;
+    -fx-background-radius: 200;
+    -fx-text-fill:white;
+    -fx-border-radius: 200;
+    -fx-border-color: #7156DD;
+}
+.toAdminButton:hover{
+    -fx-border-radius: 200;
+    -fx-background-radius: 200;
+    -fx-background-color: white;
+    -fx-text-fill: #7156DD;
+    -fx-border-color: #7156DD;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+/*调整“员工入口”按钮，鼠标放在图标上时变色*/
+.toStaffButton{
+    -fx-background-color: #3F2B63;
+    -fx-background-radius: 200;
+    -fx-text-fill:white;
+    -fx-border-radius: 200;
+    -fx-border-color: #3F2B63;
+}
+.toStaffButton:hover{
+    -fx-border-radius: 200;
+    -fx-background-radius: 200;
+    -fx-background-color: #DCDCDC;
+    -fx-text-fill: #3F2B63;
+    -fx-border-color: #3F2B63;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+/*调整管理员页面的“LOGIN”按钮，鼠标放在图标上时变色*/
+.adminLoginButton{
+    -fx-border-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
+    -fx-background-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
+    -fx-background-radius: 200;
+    -fx-border-radius: 200;
+    -fx-text-fill: white;
+}
+.adminLoginButton:hover{
+    -fx-border-color: linear-gradient(to bottom left, #A868A0, #2D75E8);
+    -fx-border-radius: 200;
+    -fx-background-radius: 200;
+    -fx-background-color: white;
+    -fx-text-fill: linear-gradient(to bottom left, #A868A0, #2D75E8);
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+/*调整员工页面的“LOGIN”按钮，鼠标放在图标上时变色*/
+.staffLoginButton{
+    -fx-border-color: linear-gradient(to bottom left, #0250c5 0%, #d43f8d 100%);
+    -fx-background-color: linear-gradient(to bottom left, #0250c5 0%, #d43f8d 100%);
+    -fx-background-radius: 200;
+    -fx-border-radius: 200;
+    -fx-text-fill: white;
+}
+.staffLoginButton:hover{
+    -fx-border-color: linear-gradient(to bottom left, #0250c5 0%, #d43f8d 100%);
+    -fx-border-radius: 200;
+    -fx-background-radius: 200;
+    -fx-background-color: white;
+    -fx-text-fill: linear-gradient(to bottom left, #0250c5 0%, #d43f8d 100%);
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+}
+
+.forgotLabelStaff:hover {
+    -fx-text-fill: #7156DD;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+}
+
+.forgotLabelAdmin:hover {
+    -fx-text-fill: #3F2B63;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+}
+
+.mainLayer {
+    -fx-background-color: transparent;
+   /*-fx-border-radius: 20;
+    -fx-background-radius: 20;*/
+}
+
+.moveLayer {
+    -fx-background-color: linear-gradient(to bottom left, #0250c5 0%, #d43f8d 100%);
+    /*-fx-border-radius: 20;
+    -fx-background-radius: 20;*/
+}
+
+.loginLayer {
+    -fx-background-color: white;
+    /*-fx-border-radius: 20;
+    -fx-background-radius: 20;*/
+}
+

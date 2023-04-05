@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="573.0" styleClass="background" stylesheets="@settingStaff.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.DoEvaluateViewController">
+   <children>
+      <Pane layoutX="9.0" layoutY="118.0" prefHeight="625.0" prefWidth="556.0" styleClass="background" stylesheets="@settingStaff.css">
+         <children>
+            <Separator layoutX="39.0" layoutY="341.0" opacity="0.15" prefHeight="42.0" prefWidth="476.0" />
+            <Separator layoutX="40.0" layoutY="-3.0" opacity="0.15" prefHeight="35.0" prefWidth="476.0" />
+            <HBox layoutX="223.0" layoutY="522.0" prefHeight="42.0" prefWidth="109.0" spacing="100.0">
+               <children>
+                  <JFXButton fx:id="saveBtn" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onMouseClicked="#saveHandled" prefHeight="42.0" prefWidth="110.0" styleClass="saveBtn" stylesheets="@settingStaff.css" text="提交" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label layoutX="40.0" layoutY="32.0" prefHeight="29.0" prefWidth="181.0" text="题目1：你喜欢什么音乐？" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="146.0" prefHeight="29.0" prefWidth="181.0" text="题目2：你喜欢你自己吗？" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="259.0" prefHeight="29.0" prefWidth="261.0" text="题目3：你对未来感到有希望吗？" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox layoutX="40.0" layoutY="90.0" prefHeight="20.0" prefWidth="346.0" spacing="20.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" text="爵士乐" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="摇滚乐" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="古典乐" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <HBox layoutX="40.0" layoutY="204.0" prefHeight="20.0" prefWidth="346.0" spacing="20.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" text="喜欢" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="一般" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="不喜欢" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <HBox layoutX="40.0" layoutY="313.0" prefHeight="20.0" prefWidth="346.0" spacing="20.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" text="充满希望" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="一般" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="毫无希望" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <Separator layoutX="43.0" layoutY="110.0" opacity="0.15" prefHeight="35.0" prefWidth="476.0" />
+            <Separator layoutX="39.0" layoutY="230.0" opacity="0.15" prefHeight="35.0" prefWidth="476.0" />
+            <Label layoutX="39.0" layoutY="383.0" prefHeight="29.0" prefWidth="261.0" text="题目4：你所有的回答都是真实的？" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox layoutX="39.0" layoutY="434.0" prefHeight="20.0" prefWidth="346.0" spacing="20.0">
+               <children>
+                  <RadioButton mnemonicParsing="false" text="完全真实" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="一般" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="不真实" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <Separator layoutX="39.0" layoutY="463.0" opacity="0.15" prefHeight="42.0" prefWidth="476.0" />
+         </children>
+      </Pane>
+      <Label fx:id="exitLabel" alignment="CENTER" layoutX="511.0" onMouseClicked="#close" prefHeight="62.0" prefWidth="61.0" styleClass="exitLabel" stylesheets="@settingStaff.css" text="X" textFill="#ddd9d9">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="213.0" layoutY="35.0" prefHeight="50.0" prefWidth="151.0" text="评估表" textFill="#ddd9d9">
+         <font>
+            <Font name="Agency FB Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="89.0" prefHeight="29.0" prefWidth="57.0" text="模板一" textFill="#815985">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

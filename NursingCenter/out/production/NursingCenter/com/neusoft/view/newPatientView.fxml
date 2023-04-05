@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="573.0" style="-fx-background-color: #393351;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.NewPatientViewController">
+   <children>
+      <Pane layoutX="9.0" layoutY="111.0" prefHeight="423.0" prefWidth="556.0">
+         <children>
+            <ImageView fitHeight="573.0" fitWidth="576.0" layoutX="-10.0" layoutY="-109.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@gif/69b7d63agw1esvthkuqhqg20c80c8gwn.gif" />
+               </image>
+            </ImageView>
+            <Separator layoutX="-11.0" layoutY="442.0" opacity="0.27" prefHeight="42.0" prefWidth="573.0" />
+            <Separator layoutX="-8.0" layoutY="-17.0" opacity="0.27" prefHeight="35.0" prefWidth="573.0" />
+            <VBox layoutX="296.0" layoutY="63.0" prefHeight="367.0" prefWidth="220.0" spacing="10.0" stylesheets="@styleSheets.css">
+               <children>
+                  <TextField fx:id="nameField" prefHeight="35.0" prefWidth="200.0" promptText="点击输入" styleClass="textField" stylesheets="@settingStaff.css" />
+                  <TextField fx:id="birthdayField" prefHeight="35.0" prefWidth="200.0" promptText="点击输入" styleClass="textField" stylesheets="@settingStaff.css" />
+                  <TextField fx:id="genderField" prefHeight="35.0" prefWidth="200.0" promptText="点击输入" styleClass="textField" stylesheets="@settingStaff.css" />
+                  <TextField fx:id="contactField" prefHeight="35.0" prefWidth="200.0" promptText="点击输入" styleClass="textField" stylesheets="@settingStaff.css" />
+                  <TextField fx:id="ECPField" prefHeight="35.0" prefWidth="200.0" promptText="点击输入" styleClass="textField" stylesheets="@settingStaff.css" />
+                  <TextField fx:id="ECNField" prefHeight="35.0" prefWidth="200.0" promptText="点击输入" styleClass="textField" stylesheets="@settingStaff.css" />
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" top="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="53.0" layoutY="63.0" prefHeight="367.0" prefWidth="162.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="200.0" text="• 姓名：" textFill="#ddd9d9">
+                     <font>
+                        <Font name="YouYuan" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="200.0" text="• 出生日期：" textFill="#ddd9d9">
+                     <font>
+                        <Font name="YouYuan" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="200.0" text="• 性别：" textFill="#ddd9d9">
+                     <font>
+                        <Font name="YouYuan" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="200.0" text="• 联系电话：" textFill="#ddd9d9">
+                     <font>
+                        <Font name="YouYuan" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="200.0" text="• 紧急联系人:" textFill="#ddd9d9">
+                     <font>
+                        <Font name="YouYuan" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="35.0" prefWidth="200.0" text="• 紧急联系电话:" textFill="#ddd9d9">
+                     <font>
+                        <Font name="YouYuan" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <HBox layoutX="117.0" layoutY="538.0" prefHeight="42.0" prefWidth="324.0" spacing="100.0">
+               <children>
+                  <JFXButton fx:id="cancelBtn" buttonType="RAISED" onMouseClicked="#close" prefHeight="42.0" prefWidth="110.0" styleClass="cancelBtn" stylesheets="@settingStaff.css" text="CANCEL" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="saveBtn" buttonType="RAISED" onMouseClicked="#saveHandled" prefHeight="42.0" prefWidth="110.0" styleClass="saveBtn" stylesheets="@settingStaff.css" text="SAVE" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox layoutX="141.0" layoutY="483.0" prefHeight="21.0" prefWidth="324.0">
+               <children>
+                  <JFXCheckBox fx:id="checkBox" prefHeight="31.0" prefWidth="29.0" text=" " unCheckedColor="#bfbfbf" />
+                  <Label prefHeight="39.0" prefWidth="84.0" text="我已阅读并同意" textFill="#b2b1b1" underline="true">
+                     <font>
+                        <Font name="YouYuan" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink prefHeight="21.0" prefWidth="151.0" text="东软集团相关规定" textFill="#d7bf0e" textOverrun="WORD_ELLIPSIS" underline="true">
+                     <font>
+                        <Font name="Tiger" size="12.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Label fx:id="exitLabel" alignment="CENTER" layoutX="511.0" onMouseClicked="#close" prefHeight="62.0" prefWidth="61.0" styleClass="exitLabel" stylesheets="@settingStaff.css" text="X" textFill="#ddd9d9">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="196.0" layoutY="35.0" prefHeight="54.0" prefWidth="182.0" text="New Patient" textFill="#ddd9d9">
+         <font>
+            <Font name="Agency FB Bold" size="44.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

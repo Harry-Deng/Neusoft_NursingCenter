@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1424.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.neusoft.controller.BuildingMainViewController">
+   <children>
+      <AnchorPane prefHeight="401.0" prefWidth="276.0" style="-fx-background-color: #393351; -fx-background-radius: 0 0 20 0;" AnchorPane.bottomAnchor="419.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="88.0" layoutY="30.0" prefHeight="53.0" prefWidth="186.0" text="东软颐养中心" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="54.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="23.0" layoutY="107.0" mnemonicParsing="false" opacity="0.7" prefHeight="106.0" prefWidth="230.0" style="-fx-background-color: #2F2B43; -fx-background-radius: 20;" />
+            <JFXButton fx:id="backToMain" layoutX="143.0" layoutY="141.0" onMouseClicked="#backToMainPage" prefHeight="40.0" prefWidth="76.0" styleClass="button2" stylesheets="@patientManagementView.css" text="返回主页" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="81.0" layoutY="346.0" />
+            <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="57.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/ic_usr.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="23.0" layoutY="250.0" mnemonicParsing="false" opacity="0.7" prefHeight="125.0" prefWidth="230.0" style="-fx-background-color: #2F2B43; -fx-background-radius: 20; -fx-border-color: white;" />
+            <Text fx:id="roomInfoField" fill="WHITE" layoutX="56.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="167.30029296875" />
+            <Label layoutX="98.0" layoutY="221.0" text="详细信息：" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="262.0" prefHeight="649.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="262.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="329.0" layoutY="223.0" />
+            <Pane layoutX="912.0" prefHeight="345.0" prefWidth="250.0" style="-fx-background-radius: 0 0 0 40; -fx-background-color: linear-gradient(to bottom left, #0250c5 0%, #d43f8d 100%);">
+               <children>
+                  <AnchorPane layoutX="13.0" layoutY="4.0" prefHeight="337.0" prefWidth="180.0">
+                     <children>
+                        <VBox fx:id="buildingModifier" alignment="TOP_CENTER" layoutY="126.0" prefHeight="85.0" prefWidth="215.0" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="126.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="215.0">
+                                 <children>
+                                    <Label text="楼名：" textFill="WHITE" />
+                                    <TextField fx:id="buildingField" prefHeight="30.0" prefWidth="153.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="215.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#addBuilding" styleClass="button4" stylesheets="@patientManagementView.css" text="新增" />
+                                    <Button mnemonicParsing="false" onAction="#removeBuilding" styleClass="button4" stylesheets="@patientManagementView.css" text="删除">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="levelModifier" alignment="TOP_CENTER" layoutY="126.0" prefHeight="85.0" prefWidth="215.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="215.0">
+                                 <children>
+                                    <Label text="楼层名" textFill="WHITE" />
+                                    <TextField fx:id="levelField" prefHeight="30.0" prefWidth="153.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="215.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#addLevel" styleClass="button4" stylesheets="@patientManagementView.css" text="新增" />
+                                    <Button mnemonicParsing="false" onAction="#removeLevel" styleClass="button4" stylesheets="@patientManagementView.css" text="删除">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="roomModifier" alignment="TOP_CENTER" layoutY="71.0" prefHeight="180.0" prefWidth="215.0" visible="false">
+                           <children>
+                              <GridPane prefHeight="140.0" prefWidth="215.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="89.0" minWidth="10.0" prefWidth="83.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="132.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label text="房间名：" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="稀有房间：" textFill="WHITE" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="房间种类：" textFill="WHITE" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="roomField" GridPane.columnIndex="1" />
+                                    <ChoiceBox fx:id="isRareChoice" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <ChoiceBox fx:id="rareTypeChoice" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="最大容量：" textFill="WHITE" GridPane.rowIndex="3" />
+                                    <TextField fx:id="maxCapacityField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                 </children>
+                              </GridPane>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="215.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#addRoom" styleClass="button4" stylesheets="@patientManagementView.css" text="新增" />
+                                    <Button mnemonicParsing="false" onAction="#removeRoom" styleClass="button4" stylesheets="@patientManagementView.css" text="删除">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="bedModifier" alignment="TOP_CENTER" layoutX="10.0" layoutY="136.0" prefHeight="85.0" prefWidth="215.0" visible="false">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="215.0">
+                                 <children>
+                                    <Label text="床号：" />
+                                    <TextField fx:id="bedField" prefHeight="30.0" prefWidth="153.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="45.0" prefWidth="215.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#addBed" styleClass="button4" stylesheets="@patientManagementView.css" text="新增" />
+                                    <Button mnemonicParsing="false" onAction="#removeBed" styleClass="button4" stylesheets="@patientManagementView.css" text="删除">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Button layoutX="85.0" layoutY="280.0" mnemonicParsing="false" onAction="#preMenu" prefHeight="30.0" prefWidth="53.0" styleClass="button5" stylesheets="@patientManagementView.css" text="返回" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Label layoutX="440.0" layoutY="788.0" text="copyright@Deng-Yimo" textFill="#919191">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="75.0" layoutY="75.0" prefHeight="589.0" prefWidth="900.0">
+               <children>
+                  <HBox layoutX="28.0" layoutY="66.0" prefHeight="544.0" prefWidth="729.0">
+                     <children>
+                        <ListView fx:id="buildingList" prefHeight="544.0" prefWidth="180.0" styleClass="listView" stylesheets="@patientManagementView.css" />
+                        <ListView fx:id="levelList" prefHeight="310.0" prefWidth="180.0" styleClass="listView" stylesheets="@patientManagementView.css">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ListView>
+                        <ListView fx:id="roomList" prefHeight="310.0" prefWidth="180.0" styleClass="listView" stylesheets="@patientManagementView.css">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ListView>
+                        <ListView fx:id="bedList" prefHeight="544.0" prefWidth="158.0" styleClass="listView" stylesheets="@patientManagementView.css">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ListView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Line endX="-138.0" endY="-445.0" layoutX="181.0" layoutY="445.0" startX="-138.0" startY="375.0" stroke="#b28cd1" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
