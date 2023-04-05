@@ -7,7 +7,7 @@
 
 - Although the project was rudimentary, it achieved an exceptional score of 99 in the final assessment. To the students who can benefit from this project, I want to encourage you not to fear new technologies and bug fixing. This internship is an important process for the transformation of your coding abilities. Keep pushing forward!
 
-- **From Harry**
+- If you need any help, please contact me. If you don't know who I am, why don't you ask your guide and she/he will help you find me:).
 ---
 
 ![4d4dec0e29cf91c1f0623803db959fc](https://user-images.githubusercontent.com/72896380/229979315-9372a404-4e82-4899-ba08-ba085895df2c.jpg)
