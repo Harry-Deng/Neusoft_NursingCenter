@@ -1,4 +1,5 @@
 ## NEUSoft 2021 summer internship program | Nursing Center
+If you reference my code, remember to **Star**!
 - The NEUSoft 2021 summer internship program included a rudimentary retirement center management system entirely developed using the Java language.
 
 - The whole project was built using the Model-View-Controller (MVC) architecture, with the system's backend logic written in the Java programming language. The front-end Graphical User Interface (GUI) was developed with JavaFX and CSS for enhanced visual appeal. The data was stored locally in a rudimentary format using JSON.
