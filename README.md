@@ -13,8 +13,8 @@ If you reference my code, remember to **Star**!
 ## Deployment
 - Download the project.
 - Unzip the Project.
-- Create a JavaFx Project with IDEA IntelliJ.(Remeber to Set the JAVA JDK to version 1.8.)
-- Import the Project into the new JavaFx Project.
+- Create a JavaFx Project with IDEA IntelliJ.(Remeber to Set the JAVA JDK version to 1.8.)
+- Import this Project into the new JavaFx Project.
 - Import the Third-party Package(JAR in Directory 'lib') into the Project.
 - Run.
 
