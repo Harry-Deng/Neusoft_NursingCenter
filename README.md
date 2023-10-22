@@ -8,7 +8,7 @@ If you reference my code, remember to **Star**!
 
 - Although the project was rudimentary, it achieved an exceptional score of 99 in the final assessment. To the students who can benefit from this project, I want to encourage you not to fear new technologies and bug fixing. This internship is an important process for the transformation of your coding abilities. Keep pushing forward!
 
-- If you need any help, please contact me. If you don't know who I am, plz ask your student supervisor(FuDaoYuan) and she/he will help you find me:).
+- If you need any help, please contact me. You can ask your mentor and she/he will help you find me:).
 
 ## Usage
 1. Download & Unzip the project.
